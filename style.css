@@ -87,7 +87,7 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-button {
+#btn-1 {
     width: 140px;
     border: 0;
     padding: 12px 10px;
@@ -99,20 +99,26 @@ button {
     transition: width 0.5s;
 }
 
-button img {
+#btn-1 img {
     width: 30px;
     display: none;
 }
 
-button:hover img {
+#btn-1:hover img {
     display: block;
 }
 
-button:hover {
+#btn-1:hover {
     width: 160px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#btn-1 a,
+.add-btn p small a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .col-1::after {
@@ -171,6 +177,47 @@ button:hover {
 
 .social-links {
     text-align: center;
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+section h3 {
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+section form input,
+section form textarea,
+section form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+section form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form {
+    text-align: center;
+}
+
+form button {
+    background-color: #107c10;
+    color: #fff;
+    border: solid 1px #055f05;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    scale: 1.1;
 }
 
 footer {

@@ -27,26 +27,33 @@
                 <h3>Controle sem fio para Series S/X/PC</h3>
                 <p>PC/XBOX</p>
                 <h4>R$359,90</h4>
-                <button type="button">Compre Agora<img src="imgs/arrow.png"></button>
+                <button type="button" id="btn-1"><a href="#reserve">Reserve já o seu</a><img src="imgs/arrow.png"></button>
             </div>
             <div class="col-2">
                 <img src="imgs/controller-1.png" alt="Controle de Xbox sem fio" class="controller">
                 <div class="color-box"></div>
                 <div class="add-btn">
                     <img src="./imgs/add.png">
-                    <p><small>Adicionar ao Carrinho</small></p>
+                    <p><small><a href="#reserve">Reservar</a></small></p>
                 </div>
             </div>
         </div>
-
+        <section id="reserve">
+            <h3>Reserve já!</h3>
+                    <form action="">
+                        <input id="nome" type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <input type="tel" placeholder="Seu telefone">
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Reservar</button>
+                    </form>
+        </section>
         <div class="social-links">
             <img src="imgs/fb.png">
             <img src="imgs/tw.png">
             <img src="imgs/ig.png">
         </div>
-
     </div>
-
     <footer>
             <p>
                 &copy; Mateus Felipe, primeiro projeto do curso <b>Desenvolvedor Fullstack Java</b> EBAC - 2024.
@@ -60,7 +67,7 @@
 
         function togglemenu() {
             if (menuList.style.maxHeight == "0px")
-            {
+            { 
                 menuList.style.maxHeight = "130px"
             }
             else 
